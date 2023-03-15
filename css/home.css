@@ -1,0 +1,54 @@
+:root {
+    --color1: #ffffff; 
+    --color2: #666666;
+    --background: radial-gradient(rgba(65,138,227), black);
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: var(--background);
+}
+.container {
+    display: flex;
+    width: 100vw;
+    background-color: var(--background);
+}
+.name p {
+    justify-content: top left;
+    align-items: center;
+}
+.star {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.star a{
+    color: var(--color1);
+    background: transparent;
+    text-decoration: none;
+}
+.star a:hover{
+    color: var(--color2);
+    
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding-left: 10px;
+}
+
+li a {
+    color: var(--color1);
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
