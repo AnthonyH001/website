@@ -8,6 +8,7 @@ body {
     overflow: hidden;
     background: radial-gradient(rgba(65,138,227), black);
     text-decoration: none;
+    text-shadow: 0px 0px 3px black;
 }
 
 .star:hover {
@@ -20,12 +21,14 @@ body {
     text-decoration: none;
     z-index: 1;
     position: absolute;
+    text-shadow: 0px 0px 3px black;
 }
 
 .star.active a{
     transition: 1s ease-in;
     color: rgb(0, 0, 0);
     text-decoration: none;
+
 }
 .star a {
     transition: 1s ease-in;
@@ -42,6 +45,7 @@ body {
     position: absolute;
     opacity: 1;
     transition: 1s ease-in;
+    text-shadow: 0px 0px 3px black;
 }
 
 .stars.active #progress a{
@@ -84,10 +88,18 @@ body {
     scale: 1;
     opacity: 1;
     color: rgb(255, 255, 255);
-    transform: translate(100px);
+    transform: translate(100px, 45px);
     transition: 1s ease-in;
     text-decoration: none;
 
+}
+.stars.active #sounds a{
+    scale: 1;
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    transform: translate(100px, -45px);
+    transition: 1s ease-in;
+    text-decoration: none;
 }
 .stars.active #user a{
     scale: 1;

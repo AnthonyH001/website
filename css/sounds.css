@@ -1,24 +1,28 @@
 body {
-    background-color: rgb(161,100,223);
+    background: radial-gradient(rgba(65,138,227), black);
     display: flex;
     justify-content: center;
     height: 100vh;
     text-align: center;
     margin: 0;
     overflow: hidden;
+    align-items: center;
 }
 
 .btn {
-    background-color: rebeccapurple;
-    color: white;
+    background-color: rgba(74, 66, 82, 0.561);
+    color: rgb(255, 0, 0);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin: 1rem;
     padding: 1.5rem 3rem;
+    justify-content: center;
+    text-align: center;
 }
 
 .btn:hover {
     opacity: 75%;
-    
+    justify-content: center;
+    text-align: center;
 }
