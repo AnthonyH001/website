@@ -1,13 +1,13 @@
 
 
 :root {
-    --blue: #3498db;
+    --blue: #010445;
     --gray: #383838;
-    --background: rgb(31,31,31);
+
 }
 
 body{
-    background-color: var(--background);
+    background: radial-gradient(rgba(65,138,227), black);
     display: flex;
     height: 100vh;
     align-items: center;
@@ -56,7 +56,7 @@ body{
 }
 
 .circle {
-    background-color: var(--background);
+    background-color: var(--gray);
     color: #e2e2e2;
     height: 30px;
     width: 30px;

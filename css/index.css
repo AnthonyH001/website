@@ -1,54 +1,141 @@
-:root {
-    --color1: #ffffff; 
-    --color2: #666666;
-    --background: radial-gradient(rgba(65,138,227), black);
-}
 
 body {
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
-    background-color: var(--background);
-}
-.container {
+    scale: 2;
     display: flex;
-    width: 100vw;
-    background-color: var(--background);
-}
-.name p {
-    justify-content: top left;
+    height: 100vh;
     align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: radial-gradient(rgba(65,138,227), black);
+    text-decoration: none;
+}
+
+.star:hover {
+    cursor: pointer;
+}
+.stars:hover {
+    cursor: pointer;
 }
 .star {
-    align-items: center;
-    justify-content: center;
-    display: flex;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
 }
 
-.star a{
-    color: var(--color1);
-    background: transparent;
+.star.active a{
+    transition: 1s ease-in;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
-.star a:hover{
-    color: var(--color2);
-    
-}
-
-li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    padding-left: 10px;
-}
-
-li a {
-    color: var(--color1);
+.star a {
+    transition: 1s ease-in;
+    z-index: 1;
+    position: absolute;
+    color: white;
     text-decoration: none;
 }
 
-li a:hover {
-    text-decoration: underline;
+.stars a {
+    color: black;
+    scale: 0;
+    text-decoration: none;
+    position: absolute;
+    opacity: 1;
+    transition: 1s ease-in;
+}
+
+.stars.active #progress a{
+    scale: 1;
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    transition: 1s ease-in;
+    transform: translate(45px, 100px);
+    text-decoration: none;
+
+}
+.stars.active #expanding a{
+    scale: 1;
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    transform: translate(-45px, -100px);
+    transition: 1s ease-in;
+    text-decoration: none;
+ 
+}
+.stars.active #navigation a{
+    scale: 1;
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    transform: translate(-45px, 100px);
+    transition: 1s ease-in;
+    text-decoration: none;
+
+}
+.stars.active #search a{
+    scale: 1;
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    transform: translate(45px, -100px);
+    transition: 1s ease-in;
+    text-decoration: none;
+
+}
+.stars.active #loading a{
+    scale: 1;
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    transform: translate(100px);
+    transition: 1s ease-in;
+    text-decoration: none;
+
+}
+.stars.active #user a{
+    scale: 1;
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    transform: translate(-100px);
+    transition: 1s ease-in;
+    text-decoration: none;
+}
+
+.namecontainer {
+    color: white;
+    position: absolute;
+    text-decoration: none;
+    opacity: 0;
+}
+.namecontainer.active {
+    opacity: 1;
+    transition: 1s ease-in;
+}
+.namecontainer.active .twitch{
+    position: absolute;
+    scale: 1;
+    color: white;
+    opacity: 1;
+    transition: 1s ease-in;
+    transform: translate(-150px, -50px);
+    text-decoration: none;
+}
+.namecontainer.active .osu{
+    position: absolute;
+    scale: 1;
+    color: white;
+    opacity: 1;
+    transition: 1s ease-in;
+    transform: translate(-150px, 50px);
+    text-decoration: none;
+}
+
+.namecontainer.active a {
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    transition: 1s ease-in;
+}
+.namecontainer.active .name {
+    transform: translateX(-200px);
+    transition: 1s ease-in;
+
 }
 

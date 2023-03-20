@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: #333333;
+    background: radial-gradient(rgba(65,138,227), black);
     color: #222222;
     margin: 0;
     overflow-x: hidden;

@@ -7,7 +7,7 @@ body {
     justify-content: center;
     margin: 0;
     overflow: hidden;
-    background: linear-gradient(to right, blue, purple);
+    background: radial-gradient(rgba(65,138,227), black);
 }
 
  .container {
