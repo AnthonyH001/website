@@ -1,7 +1,11 @@
+@import url(https://drive.google.com/drive/folders/1OmeYX7exSvHodiOUkZC9uozGBFr2XiEc?usp=share_link);
 
+* {
+    font-family: Determination Sans Web;
+}
 
 :root {
-    --blue: #010445;
+    --blue: #ffffff;
     --gray: #383838;
 
 }
@@ -15,8 +19,26 @@ body{
     margin: 0;
     overflow: hidden;
     color: white;
+    text-shadow: 0px 0px 3px black;
+    box-shadow: 0px 0px 3px black;
 }
-
+.home {
+    left: 97%;
+    top: 5%;
+    text-decoration: none;
+    scale: 2;
+    color: white;
+    position: absolute;
+    opacity: 1;
+    z-index: 1;
+    text-shadow: 0px 0px 3px black;
+ }
+ .home a {
+    color: white;
+    position: top left;
+    opacity: 1;
+    text-decoration: none;
+ }
 .container {
     text-align: center;
 }
@@ -52,7 +74,7 @@ body{
     left: 0;
     z-index: -1;
     transform: translateY(-50%);
-    
+    box-shadow: 0px 0px 5px black;
 }
 
 .circle {
@@ -66,6 +88,7 @@ body{
     justify-content: center;
     border: 3px solid var(--gray);
     transition: 0.7s ease;
+    box-shadow: 0px 0px 5px black;
 }
 
 .circle.active {
@@ -73,7 +96,7 @@ body{
 }
 
 .btn {
-    background-color: var(--blue);
+    background-color: gray;
     color: white;
     padding: 8px, 30px;
     margin: 5px;
@@ -81,6 +104,7 @@ body{
     border: 0px;
     border-radius: 6px;
     cursor: pointer;
+    box-shadow: 0px 0px 5px black;
 }
 
 .btn:active {

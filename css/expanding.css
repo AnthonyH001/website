@@ -1,19 +1,43 @@
+@import url(https://www.fontspace.com/get/family/j2px2);
 
+* {
+    font-family: Determination Sans Web;
+}
 
 body {
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
-    margin: 0;
     overflow: hidden;
     background: radial-gradient(rgba(65,138,227), black);
+    text-shadow: 0px 0px 3px black;
+    box-shadow: 0px 0px 3px black;
+}
+
+.home {
+   left: 97%;
+   top: 5%;
+   text-decoration: none;
+   scale: 2;
+   color: white;
+   position: absolute;
+   opacity: 1;
+   z-index: 1;
+   text-shadow: 0px 0px 3px black;
+}
+.home a {
+   color: white;
+   position: top left;
+   opacity: 1;
+   text-decoration: none;
 }
 
  .container {
+   margin: 0;
     display: flex;
     width: 90vw;
-
+    opacity: 1;
  }
 
  .panel {
