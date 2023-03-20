@@ -16,7 +16,9 @@ body {
 }
 .stars:hover {
     cursor: pointer;
+    
 }
+
 .star {
     text-decoration: none;
     z-index: 1;
