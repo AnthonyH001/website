@@ -10,8 +10,8 @@
 
 }
 
-body{
-    background: radial-gradient(rgba(65,138,227), black);
+body {
+    background: radial-gradient(rgba(65, 138, 227), black);
     display: flex;
     height: 100vh;
     align-items: center;
@@ -22,6 +22,7 @@ body{
     text-shadow: 0px 0px 3px black;
     box-shadow: 0px 0px 3px black;
 }
+
 .home {
     left: 97%;
     top: 5%;
@@ -32,13 +33,15 @@ body{
     opacity: 1;
     z-index: 1;
     text-shadow: 0px 0px 3px black;
- }
- .home a {
+}
+
+.home a {
     color: white;
     position: top left;
     opacity: 1;
     text-decoration: none;
- }
+}
+
 .container {
     text-align: center;
 }
@@ -57,7 +60,7 @@ body{
     width: 0%;
     position: absolute;
     background-color: var(--blue);
-    top:50%;
+    top: 50%;
     left: 0;
     z-index: -1;
     translate: translateY(-50%);
